@@ -63,7 +63,11 @@ class Car(TransportVehicleBase):
         super().__init__(name, color, capacity, power, transmission)
 
     def ride(self):
-        super().ride()
+        # В переопределенном методе вызывается метод родительского класса.
+
+        # super().ride()  # Вот почему у Вас на выводе
+        # получается сообщения родительского класса.
+
         print('Car is on the road :o')
 
 
