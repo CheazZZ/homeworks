@@ -17,9 +17,8 @@ class Human:
 
     @staticmethod
     def default_info(value) -> None:
-        data: str = (f'\ndefault name is {value.default_name}'
-                     f'\ndefault age is {value.default_age}')
-        print(data)
+        Human.default_name
+        Human.default_age
 
 
 human = Human(1_000_000,
