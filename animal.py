@@ -61,10 +61,22 @@ class Cat(AnimalBase):
     def __init__(self, name, sex, date_of_birth):
         super().__init__(name, sex, date_of_birth)
 
+    def get_info(self):
+        print(f'Привет, я кошка: {self.name}')
+
+    def get_age(self):
+        return 10
+
 
 class Dog(AnimalBase):
     def __init__(self, name, sex, date_of_birth):
         super().__init__(name, sex, date_of_birth)
+
+    def get_info(self):
+        print(f'Я собачка: {self.name}')
+
+    def get_age(self):
+        return 20
 
 
 class Lion(AnimalBase):
